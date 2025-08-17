@@ -1,5 +1,5 @@
-num=int(input("Enter the number of heights:"))
-heights=[int(input(f"Enter the {i+1} height:"))for i in range(num)]
+heights=list(map(int,input("Enter the heights seperated by spaces:").split()))
+num=len(heights)
 print(heights)
 ans=0
 lmax=[0]*num
